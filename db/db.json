@@ -1,7 +1,12 @@
 [
     {
-        "id": "cc9441fb-665c-45da-904a-c0d61f86b62e",
-        "title": "Taking a note",
-        "text": "Taking a new note"
+        "id": "c2aaad06-07de-446c-b2c2-945d5940545e",
+        "title": "Adding a new note",
+        "text": "I'm adding a new note with this application"
+    },
+    {
+        "id": "68b7e484-2424-44ca-afd8-47a784e90b95",
+        "title": "Another note",
+        "text": "..."
     }
 ]
