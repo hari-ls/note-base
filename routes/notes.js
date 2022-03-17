@@ -10,13 +10,14 @@ notes.get("/", (req, res) => {
   readFromFile(file).then((data) => res.json(JSON.parse(data)));
 });
 
-notes.get("/:num", (req, res) => {
-  const num = req.params.num;
+notes.get("/:id", (req, res) => {
+  const id = parseInt(req.params.id);
   readFromFile(file)
     .then((data) => JSON.parse(data))
     .then((json) => {
-      const result = json[num - 1];
-      return result ? res.json(result) : res.json("No note found");
+      console.log(json);
+      const result = json.filter((note) => note.id === id);
+      return result.length > 0 ? res.json(result) : res.json("No note found");
     });
 });
 
@@ -29,7 +30,15 @@ notes.put("/", (req, res) => {
 });
 
 notes.delete("/:id", (req, res) => {
-  res.json("DELETE");
+  const id = parseInt(req.params.id);
+  readFromFile(file)
+    .then((data) => JSON.parse(data))
+    .then((json) => {
+      console.log(json);
+      const result = json.filter((note) => note.id !== id);
+      writeToFile(file, result);
+      res.json("Note deleted");
+    });
 });
 
 module.exports = notes;
