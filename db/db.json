@@ -1,27 +1,7 @@
 [
-  {
-    "id": 1,
-    "title": "Test Title",
-    "text": "Test text"
-  },
-  {
-    "id": 2,
-    "title": "Another Title",
-    "text": "lorem ipsum dolor sit amet"
-  },
-  {
-    "id": 3,
-    "title": "Another Title",
-    "text": "lorem ipsum dolor sit amet"
-  },
-  {
-    "id": 4,
-    "title": "Another Title",
-    "text": "lorem ipsum dolor sit amet"
-  },
-  {
-    "id": 5,
-    "title": "Another Title",
-    "text": "lorem ipsum dolor sit amet"
-  }
+    {
+        "id": "cc9441fb-665c-45da-904a-c0d61f86b62e",
+        "title": "Taking a note",
+        "text": "Taking a new note"
+    }
 ]
